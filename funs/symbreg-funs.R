@@ -93,7 +93,8 @@ symbolic.regression_bootstrap <- function(X.lower, X.upper, Y.lower, Y.upper,
   
   # initialize
   n            <- length(Y.lower)
-  estimates_bs <- matrix(NA_real_, num.bootstrap.samples, ncol(X.lower) + 1)
+  estimates_bs <- matrix(NA_real_, num.bootstrap.samples,
+                         ifelse(is.vector(X.lower), length(X.lower) + 1, ncol(X.lower) + 1))
   
   for(b in 1:num.bootstrap.samples){
     
