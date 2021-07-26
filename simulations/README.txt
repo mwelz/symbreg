@@ -1,0 +1,2 @@
+- "autocorrelation" contains replication files for the simulation associated with Table 7 in the working paper. Language used: R.
+- "no-autocorrelation" contains replication files for the simulations associated with Tables 3--6 in the working paper. Language used: Matlab.
