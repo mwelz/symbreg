@@ -8,9 +8,9 @@ n.arr       <- 100
 alpha.arr   <- 0
 beta.arr    <- c(-2, 0, 2) 
 rho.arr     <- c(0.2, 0.5)
-sigsq.e.arr <- 0.5
-sigsq.z.arr <- 0.5
-sigsq.w.arr <- 0.5
+sigsq.e.arr <- 2
+sigsq.z.arr <- 2
+sigsq.w.arr <- 2
 
 # settings
 R                     <- 1000
@@ -128,4 +128,4 @@ for(n in n.arr){
 
 
 # store final results
-save(measures.overall, file = paste0(getwd(), "/simulations/revision/sigma05.Rdata"))
+save(measures.overall, file = paste0(getwd(), "/simulations/autocorrelation/sigma2.Rdata"))
